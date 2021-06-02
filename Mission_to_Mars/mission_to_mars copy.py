@@ -28,7 +28,7 @@
  "cells": [
   {
    "cell_type": "code",
-   "execution_count": 5,
+   "execution_count": 19,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -41,7 +41,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 6,
+   "execution_count": 20,
    "metadata": {},
    "outputs": [
     {
@@ -51,9 +51,9 @@
       "[WDM] - ====== WebDriver manager ======\n",
       "[WDM] - Current google-chrome version is 89.0.4389\n",
       "[WDM] - Get LATEST driver version for 89.0.4389\n",
+      "[WDM] - Driver [C:\\Users\\Julie\\.wdm\\drivers\\chromedriver\\win32\\89.0.4389.23\\chromedriver.exe] found in cache\n",
       "\n",
-      "\n",
-      "[WDM] - Driver [C:\\Users\\Julie\\.wdm\\drivers\\chromedriver\\win32\\89.0.4389.23\\chromedriver.exe] found in cache\n"
+      "\n"
      ]
     }
    ],
@@ -65,7 +65,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 10,
+   "execution_count": 21,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -80,7 +80,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 11,
+   "execution_count": 23,
    "metadata": {},
    "outputs": [
     {
@@ -108,7 +108,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 12,
+   "execution_count": 31,
    "metadata": {},
    "outputs": [
     {
@@ -141,7 +141,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 13,
+   "execution_count": 33,
    "metadata": {},
    "outputs": [
     {
@@ -178,7 +178,7 @@
       ]
      },
      "metadata": {},
-     "execution_count": 13
+     "execution_count": 33
     }
    ],
    "source": [
@@ -191,7 +191,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 14,
+   "execution_count": 35,
    "metadata": {},
    "outputs": [
     {
@@ -212,7 +212,7 @@
       "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>Description</th>\n      <th>Value</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>Equatorial Diameter:</td>\n      <td>6,792 km</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>Polar Diameter:</td>\n      <td>6,752 km</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>Mass:</td>\n      <td>6.39 × 10^23 kg (0.11 Earths)</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>Moons:</td>\n      <td>2 (Phobos &amp; Deimos)</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>Orbit Distance:</td>\n      <td>227,943,824 km (1.38 AU)</td>\n    </tr>\n    <tr>\n      <th>5</th>\n      <td>Orbit Period:</td>\n      <td>687 days (1.9 years)</td>\n    </tr>\n    <tr>\n      <th>6</th>\n      <td>Surface Temperature:</td>\n      <td>-87 to -5 °C</td>\n    </tr>\n    <tr>\n      <th>7</th>\n      <td>First Record:</td>\n      <td>2nd millennium BC</td>\n    </tr>\n    <tr>\n      <th>8</th>\n      <td>Recorded By:</td>\n      <td>Egyptian astronomers</td>\n    </tr>\n  </tbody>\n</table>\n</div>"
      },
      "metadata": {},
-     "execution_count": 14
+     "execution_count": 35
     }
    ],
    "source": [
@@ -224,17 +224,17 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 19,
+   "execution_count": 36,
    "metadata": {},
    "outputs": [],
    "source": [
     "#convert to html\n",
-    "mars_facts = facts_df.to_html('marsfacts.html',index=False)"
+    "facts_df.to_html('marsfacts.html',index=False)"
    ]
   },
   {
    "cell_type": "code",
-   "execution_count": 16,
+   "execution_count": 49,
    "metadata": {},
    "outputs": [],
    "source": [
@@ -256,7 +256,7 @@
   },
   {
    "cell_type": "code",
-   "execution_count": 18,
+   "execution_count": 50,
    "metadata": {},
    "outputs": [
     {
@@ -274,8 +274,7 @@
       "https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg\n",
       "-\n",
       "Valles Marineris Hemisphere Enhanced\n",
-      "https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg\n",
-      "[{'title': 'Cerberus Hemisphere Enhanced', 'image_url': 'https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg'}, {'title': 'Schiaparelli Hemisphere Enhanced', 'image_url': 'https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg'}, {'title': 'Syrtis Major Hemisphere Enhanced', 'image_url': 'https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg'}, {'title': 'Valles Marineris Hemisphere Enhanced', 'image_url': 'https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg'}, {'title': 'Cerberus Hemisphere Enhanced', 'image_url': 'https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/cerberus_enhanced.tif/full.jpg'}, {'title': 'Schiaparelli Hemisphere Enhanced', 'image_url': 'https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/schiaparelli_enhanced.tif/full.jpg'}, {'title': 'Syrtis Major Hemisphere Enhanced', 'image_url': 'https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/syrtis_major_enhanced.tif/full.jpg'}, {'title': 'Valles Marineris Hemisphere Enhanced', 'image_url': 'https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg'}]\n"
+      "https://astropedia.astrogeology.usgs.gov/download/Mars/Viking/valles_marineris_enhanced.tif/full.jpg\n"
      ]
     }
    ],
@@ -308,8 +307,14 @@
     "        print(title)\n",
     "        print(img_src)\n",
     "\n",
+    "        #dictionary for title and url\n",
+    "        hem_data = {'title':title, 'image_url': img_src}\n",
+    "\n",
     "        #append to list\n",
-    "        hemisphere_image_urls.append({'title':title, 'image_url': img_src})\n"
+    "        hemisphere_data.append(hem_data)\n",
+    "\n",
+    "\n",
+    "\n"
    ]
   },
   {
